@@ -1,119 +1,43 @@
 import styled from 'styled-components'
-import emailjs from 'emailjs-com';
 
-const FormStyles = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+const ContactStyles = styled.div`
+    /* background: rgba(10, 51, 81, 1);
+    background: linear-gradient(120deg, rgba(16,70,110,1) 0%, rgba(0,212,255,1) 100%); */
+    padding: 2.5rem 0;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    color: rgb(10,51,81);
 
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;        
+    }   
 
-form {
-    height: 75vh;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-}
+    h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
 
-label {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
+    @media(max-width: 1000px) {
+        padding: 2rem;
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 50px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+        h1 {
+            font-size: 2rem;
+        }
 
-  textarea {
-    width: 100%;
-    height: 80px;
-    padding: 12px 50px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-    resize: none;
-  }
-
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 50px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  input[type=submit], value {
-      font-size: 1.5rem;
-  }
-
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
 `;
 
 export default function contact() {
-    function sendEmail(e) {
-        e.preventDefault();
-    
-        emailjs.sendForm('service_knnbs27', 'template_zr5ta6j', e.target, 'user_W8ApuPB5z1Kso3Hg1KQMm')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-          e.target.reset();
-      }
-
     return (
-        <FormStyles id="contact">
-            <form onSubmit={sendEmail}>
-                <label htmlFor="name">Name*: 
-                    <input
-                        required 
-                        type="text" 
-                        id="name" 
-                        name="name" 
-                        placeholder="Name"
-                    />
-                </label>
-                <label htmlFor="company">Company:
-                    <input 
-                        type="text" 
-                        id="company" 
-                        name="company"
-                        placeholder="Company"
-                    />
-                </label>
-                <label htmlFor="email">Email*:
-                    <input 
-                        required
-                        type="text" 
-                        id="email" 
-                        name="email"
-                        placeholder="Email Address"
-                    />
-                </label>
-                <label htmlFor="message">Tell us how we can help*:
-                    <textarea
-                        required
-                        id="message" 
-                        name="message"
-                        placeholder="Please write your message here"
-                    />
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
-        </FormStyles>
-    )
+        <ContactStyles>
+            <h1>Reach out today to get a free consultation</h1>
+            <h2>Email us at jlentzconsulting@gmail.com</h2>
+            <h2>or fill out the form below!</h2>
+        </ContactStyles>
+        )
 }

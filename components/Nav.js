@@ -8,13 +8,12 @@ const NavStyles = styled.div`
         flex-wrap: wrap;
         justify-content: space-between;
         background-color: rgba(255, 252, 242, 0.25);
-
         position: relative;
-        height: 15vh;
 
         img {
             padding-left: 1rem;
-            width: 800px;
+            padding-bottom: 1rem;
+            width: 500px;
         }
 
         img:hover {
@@ -31,12 +30,34 @@ const NavStyles = styled.div`
         ul li a {
             color: rgb(10, 51, 81);
             padding: .65rem;
-            font-size: 2.25rem;
+            font-size: 1.75rem;
+            font-weight: 500;
         }
 
         ul li a:hover {
-            color: rgba(10, 51, 81, 0.5);
-        }      
+            color: rgba(0,212,255,1);
+            text-decoration: underline;
+        }
+        
+        ul li a:active {
+            color: rgb(0,212,255);
+            text-decoration: none;
+        }
+
+        @media (max-width: 1000px) {
+            justify-content: center;
+            align-items: center;
+
+            img {
+                padding: 1rem 0;
+                margin: 0;
+            }
+
+            ul {
+                padding: 0;
+                margin: 0 0 1.5rem 0;
+            }
+        }
     `;
 
 export default function Nav() {
