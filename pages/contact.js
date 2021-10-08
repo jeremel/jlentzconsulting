@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import styled from 'styled-components'
 
 const ContactStyles = styled.div`
@@ -35,6 +36,11 @@ const ContactStyles = styled.div`
 export default function contact() {
     return (
         <ContactStyles>
+            <Head>
+                <title>JLentz Consulting|Contact</title>
+                <meta name="JLentz Consulting" content="JLentz Consulting" />
+                <link rel="icon" href="/JL_Logo.png" />
+            </Head>
             <h1>Reach out today to get a free consultation</h1>
             <h2>Email us at jlentzconsulting@gmail.com</h2>
             <h2>or fill out the form below!</h2>

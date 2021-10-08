@@ -71,8 +71,7 @@ input[type=text], select {
 `;
 
 export default function ContactForm() {
-    let submitButton = document.querySelector('.submitButton');
-    // console.log(submitButton);
+    // const submitButton = document.querySelector('.submitButton');
     
     function sendEmail(e) {
         e.preventDefault();
@@ -84,13 +83,9 @@ export default function ContactForm() {
               console.log(error.text);
           });
           e.target.reset();
-          submitButton.setAttribute("disabled", true);
-          submitButton.setAttribute("value", "Thank You!");
+        //   submitButton.setAttribute("disabled", true);
+        //   submitButton.setAttribute("value", "Thank You!");
       }
-
-    //   function handleSubmit(e) {
-
-    //   }
 
     return (
         <FormStyles id="contact">
