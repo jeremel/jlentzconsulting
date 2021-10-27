@@ -1,4 +1,4 @@
-import Head from 'next/Head';
+import Head from 'next/head';
 import styled from "styled-components";
 
 const AboutStyles = styled.div`
@@ -59,8 +59,8 @@ export default function about() {
     return (
         <AboutStyles>
             <Head>
-                <title>JLentz Consulting|About</title>
-                <meta name="JLentz Consulting" content="JLentz Consulting" />
+                <title>JLentz Consulting</title>
+                <meta name="About JLentz Consulting" content="About JLentz Consulting" />
                 <link rel="icon" href="/JL_Logo.png" />
             </Head>
             <header>

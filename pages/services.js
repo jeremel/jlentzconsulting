@@ -115,8 +115,8 @@ export default function services() {
     return (
         <ServicesStyles>
             <Head>
-                <title>JLentz Consulting|Services</title>
-                <meta name="JLentz Consulting" content="JLentz Consulting" />
+                <title>JLentz Consulting Services</title>
+                <meta name="JLentz Consulting" content="JLentz Consulting Services" />
                 <link rel="icon" href="/JL_Logo.png" />
             </Head>
             <header>
