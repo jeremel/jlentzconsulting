@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Link from 'next/link'
 
 const NavStyles = styled.div`
-        padding: 0;
+        padding: 0 1.5rem;
         margin: 0;
         display: flex;
         flex-wrap: wrap;
@@ -69,7 +69,7 @@ export default function Nav() {
             <ul>
                 <li><Link href="/services">Services</Link></li>
                 <li><Link href="/about">About</Link></li>
-                <li><Link href="/contact">Contact</Link></li>
+                <li><Link href="/#contact">Contact</Link></li>
             </ul>
         </NavStyles>
     )

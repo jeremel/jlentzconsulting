@@ -90,7 +90,7 @@ export default function Footer() {
                     <h3><a href="/services#projectmanagement">Project Management</a></h3>
                 </div>
                 <h2><Link href='/about'>About</Link></h2>
-                <h2><Link href='/contact'>Contact</Link></h2>
+                <h2><Link href='/#contact'>Contact</Link></h2>
             </div>  
         </FooterStyles>
     )

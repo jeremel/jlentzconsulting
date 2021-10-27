@@ -35,9 +35,9 @@ const ContactStyles = styled.div`
 
 export default function Contact() {
     return (
-        <ContactStyles>
+        <ContactStyles id="contact">
             <div className="contactText">
-                <h1>Get Started Today!</h1>
+                <h1>Reach Out Today!</h1>
                 <h2>Fill out the form below and leave us a brief message explaining what you need assistance with and we will get back to you as soon as possible!</h2>
             </div>
             <ContactForm />

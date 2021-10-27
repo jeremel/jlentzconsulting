@@ -12,21 +12,23 @@ const IndexStyles = styled.div`
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       justify-items: center;
-      padding: 3rem 3rem 3rem 4rem;
+      padding: 3rem 8rem;
       background: rgb(16,70,110);
       background: linear-gradient(120deg, rgba(16,70,110,1) 0%, rgba(0,212,255,1) 100%);
       color: #fff;
 
       h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
         margin: 0;
-        line-height: 1.4;
+        line-height: 1.5;
+        font-family: 'Libre Baskerville', serif;
       }
     
       h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin: 0;
-        line-height: 1.5;
+        line-height: 1.65;
+        font-family: 'Libre Baskerville', serif;
       }
 
       @media(min-width: 1000px) {
@@ -71,17 +73,16 @@ const IndexStyles = styled.div`
       p {
         margin: 0;
         padding: 10px;
+        font-family: 'Libre Baskerville', serif;
       }
     }
 
     .services .card:hover {
-      /* box-shadow: 5px 5px 5px 5px black; */
       background-color: rgba(0,212,255,0.2);
       border: 4px solid rgb(10,51,81);
       border-radius: 2%;
 
       h1 {
-        /* text-decoration: underline; */
         border-bottom: 4px solid rgb(10,51,81);
         padding-bottom: 1px;
       }

@@ -12,7 +12,7 @@ const ServicesStyles = styled.div`
     header {
         background: rgba(10, 51, 81, 1);
         background: linear-gradient(120deg, rgba(16,70,110,1) 0%, rgba(0,212,255,1) 100%);
-        padding: 3rem 0;
+        padding: 1rem 0;
 
 
     h1 {
@@ -29,7 +29,7 @@ const ServicesStyles = styled.div`
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin: 2rem 0 0 0;
+        margin: 0.5rem 0 0 0;
     }
 
     ul li {
