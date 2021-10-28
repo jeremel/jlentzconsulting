@@ -155,7 +155,7 @@ export default function Home() {
           </p>
         </div>
         <div className="card">
-          <img src="/Amigos-Workspace.png" alt="Project Management" />
+          <img src="/Project-Management.png" alt="Project Management" />
           <h1><Link href='/services'>Project Management</Link></h1>
           <p>
             Whether you already have a project in the pipeline that needs somebody dedicated to making sure it is accomplished on time and on budget or you are planning on some change in your busineess but do not have the time to manage it yourself, we are available to manage your projects in a way that will keep all stakeholders involved and up to date through each step of the process. We believe that our use of clear communication, our attention to detail, and our genuine desire to see our clients succeed make us the best choice to manage your project.
