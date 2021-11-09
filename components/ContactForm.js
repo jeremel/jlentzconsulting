@@ -11,20 +11,10 @@ const FormStyles = styled.div`
     flex-direction: column;
     color: #fff;
 
-    fieldset {
-      margin: 0;
-      padding: 0;
-      border: none;
-    }
-
-    fieldset:disabled {
-      cursor: not-allowed;
-    }
-
     form {
         display: flex;
         flex-direction: column;
-        width: 500px;
+        width: 32.5rem;
     }
 
     label {
@@ -33,7 +23,7 @@ const FormStyles = styled.div`
     }
 
     input[type=text], select {
-        width: 100%;
+        width: 500px;
         padding: 1rem 1.25rem;
         margin: 0.5rem 0;
         display: inline-block;
@@ -49,7 +39,7 @@ const FormStyles = styled.div`
     }
 
     textarea {
-        width: 100%;
+        width: 500px;
         height: 100px;
         padding: 0.75rem 1.25rem;
         box-sizing: border-box;
@@ -65,7 +55,7 @@ const FormStyles = styled.div`
     }
 
     input[type=submit] {
-        width: 100%;
+        width: 500px;
         background-color: rgb(10, 51, 81);
         color: white;
         padding: 14px 50px;
@@ -100,6 +90,16 @@ const FormStyles = styled.div`
     input[type=submit]:disabled:hover {
       background-color: rgb(10,51,81);
     }
+
+    @media(max-width: 1000px) {
+      form {
+        width: 25rem;
+      }
+
+      input[type=text], select, textarea, input[type=submit] {
+        width: 300px;
+      }
+    }
 `;
 
 export default function ContactForm() {
@@ -121,7 +121,6 @@ export default function ContactForm() {
 
   return (
     <FormStyles>
-      <fieldset>
       <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" name="name" />
@@ -145,7 +144,6 @@ export default function ContactForm() {
         }
       />
       </form>
-    </fieldset>
     </FormStyles>
   );
 };

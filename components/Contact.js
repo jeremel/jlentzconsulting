@@ -30,6 +30,16 @@ const ContactStyles = styled.div`
             text-align: center;
             margin: 1.25rem 0;
         }
+
+        @media(max-width: 1000px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
     }
 `;
 

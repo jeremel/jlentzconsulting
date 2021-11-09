@@ -11,38 +11,21 @@ const IndexStyles = styled.div`
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      justify-items: center;
-      padding: 3rem 8rem;
+      padding: 5rem 8rem;
       background: rgb(16,70,110);
       background: linear-gradient(120deg, rgba(16,70,110,1) 0%, rgba(0,212,255,1) 100%);
       color: #fff;
 
-      h2 {
+      h1 {
         font-size: 1.75rem;
         margin: 0;
         line-height: 1.5;
         font-family: 'Libre Baskerville', serif;
       }
-    
-      h3 {
-        font-size: 1.25rem;
-        margin: 0;
-        line-height: 1.65;
-        font-family: 'Libre Baskerville', serif;
-      }
 
-      @media(min-width: 1000px) {
-        img {
-          transform: translateY(4rem);
-          width: 500px;
-        }
-        
+      img {
+        padding-left: 5rem;
       }
-
-      @media(max-width: 1000px) {
-        grid-template-columns: 1fr;
-      }
-
     }
 
     // Services section of Index page
@@ -94,13 +77,15 @@ const IndexStyles = styled.div`
 
     @media(max-width: 1000px) {
       header {
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
+        padding: 2rem 4rem; 
         grid-template-columns: 1fr;
 
-        h2 {
-          font-size: 1.5rem;
+        h1 {
+          font-size: 1.25rem;
+        }
+
+        img {
+          padding-left: 0;
         }
       }
     }
@@ -116,20 +101,14 @@ export default function Home() {
       </Head>
 
       <header>
-         <div className="header1">
-          <h2>
+         <div className="header">
+          <h1>
             JLentz Consulting is a South Jersey based consultancy that provides small business coaching, financial and operational advisory services, and project management services for owners and operators who want to take their small business to the next level.
-          </h2>
+          </h1>
         </div>
         <div className="image">
           <img src="/Croods-Chart.png" alt="JLentz Consulting" />
-        </div>
-        <div className="header2">
-          <h3>
-            We work to solve your pain points through custom solutions that are specifically tailored to fit the needs of your business. We know that each business's requirements are unique, and we excel at providing creative solutions to every problem we encounter.
-          </h3>
-        </div>
-        
+        </div>        
       </header>
 
       <main className="services" id="services">
