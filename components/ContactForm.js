@@ -7,23 +7,25 @@ const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATEID;
 const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICEID;
 
 const FormStyles = styled.div`
-    display: flex;
-    flex-direction: column;
     color: #fff;
 
     form {
         display: flex;
         flex-direction: column;
-        width: 32.5rem;
+        align-items: center;
+        width: 100%;
     }
 
     label {
         font-size: 1.25rem;
         font-weight: 600;
+        /* width: 500px; */
+        width: 100%;
+        /* transform: translateX(-5rem); */
     }
 
     input[type=text], select {
-        width: 500px;
+        /* width: 500px; */
         padding: 1rem 1.25rem;
         margin: 0.5rem 0;
         display: inline-block;
